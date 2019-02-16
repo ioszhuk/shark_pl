@@ -28,7 +28,8 @@
       "kartik-v/yii2-grid": "dev-master",
       "kartik-v/yii2-widget-datepicker": "dev-master",
       "kartik-v/yii2-editable": "dev-master",
-      "baibaratsky/yii2-serialized-attributes-behavior": "^1.2"
+      "baibaratsky/yii2-serialized-attributes-behavior": "^1.2",
+        "voskobovich/yii2-linker-behavior": "^4.0"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

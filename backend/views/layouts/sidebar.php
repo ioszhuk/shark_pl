@@ -17,53 +17,59 @@ use yii\helpers\Html;
         <!-- SIDEBAR START -->
 		<?= MetronicSidebar::widget([
 			'items' => [
+
+
 				[
-					'label' => 'Главная',
+					'label' => 'Контент',
+					'template' => 'submenu',
+					'icon' => 'flaticon-tool',
+					'url' => 'javascript:;',
+					'items' => [
+						[
+							'label' => 'Главная стр.',
+							'template' => 'single',
+							'icon' => 'flaticon-tool',
+							'url' => ['settings/home-page'],
+						],
+						[
+							'label' => 'Помощь стр.',
+							'template' => 'single',
+							'icon' => 'flaticon-tool',
+							'url' => ['settings/help-page'],
+						],
+						[
+							'label' => 'Клиентам стр.',
+							'template' => 'single',
+							'icon' => 'flaticon-tool',
+							'url' => ['settings/client-page'],
+						],
+						[
+							'label' => 'Водителям стр.',
+							'template' => 'single',
+							'icon' => 'flaticon-tool',
+							'url' => ['settings/driver-page'],
+						],
+					],
+				],
+
+
+				[
+					'label' => 'Города',
 					'template' => 'single',
 					'icon' => 'flaticon-tool',
-					'url' => ['site/index'],
+					'url' => ['city/index'],
 				],
 				[
-					'label' => 'О нас',
+					'label' => 'Клиенты',
 					'template' => 'single',
 					'icon' => 'flaticon-tool',
-					'url' => ['about-settings/index'],
+					'url' => ['client/index'],
 				],
 				[
-					'label' => 'Сертификаты',
+					'label' => 'Водители',
 					'template' => 'single',
 					'icon' => 'flaticon-tool',
-					'url' => ['certificate/index'],
-				],
-				[
-					'label' => 'Цены',
-					'template' => 'single',
-					'icon' => 'flaticon-tool',
-					'url' => ['price/index'],
-				],
-				[
-					'label' => 'Акции',
-					'template' => 'single',
-					'icon' => 'flaticon-tool',
-					'url' => ['#'],
-				],
-				[
-					'label' => 'Новости',
-					'template' => 'single',
-					'icon' => 'flaticon-tool',
-					'url' => ['news/index'],
-				],
-				[
-					'label' => 'Вопрос-ответ',
-					'template' => 'single',
-					'icon' => 'flaticon-tool',
-					'url' => ['faq/index'],
-				],
-				[
-					'label' => 'До и после',
-					'template' => 'single',
-					'icon' => 'flaticon-tool',
-					'url' => ['before-after/index'],
+					'url' => ['driver/index'],
 				],
 				[
 					'label' => 'Отзывы',
@@ -71,30 +77,7 @@ use yii\helpers\Html;
 					'icon' => 'flaticon-tool',
 					'url' => ['testimonial/index'],
 				],
-                [
-					'label' => 'Специалисты',
-					'template' => 'single',
-					'icon' => 'flaticon-tool',
-					'url' => ['specialist/index'],
-				],
-				[
-					'label' => 'Настройки',
-					'template' => 'single',
-					'icon' => 'flaticon-tool',
-					'url' => ['site-settings/index'],
-				],
-				[
-					'label' => 'Подписчики',
-					'template' => 'single',
-					'icon' => 'flaticon-tool',
-					'url' => ['subscriber/index'],
-				],
-                [
-					'label' => 'Преимущества',
-					'template' => 'single',
-					'icon' => 'flaticon-tool',
-					'url' => ['advantage/index'],
-				],
+
 			]
 		]) ?>
         <!-- SIDEBAR END -->

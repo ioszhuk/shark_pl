@@ -13,15 +13,5 @@ class ComponentHelper extends \yii\base\Component
 
 		return $range;
 	}
-	public function getProductStatus()
-	{
-		$status = [];
-
-		$status[0] = [ 'value' => 0, 'label' => 'Нет в наличии'];
-		$status[1] = [ 'value' => 5, 'label' => 'Под заказ'];
-		$status[2] = [ 'value' => 10, 'label' => 'Быстрая доставка'];
-
-		return $status;
-	}
 
 }

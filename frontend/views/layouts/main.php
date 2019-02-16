@@ -24,9 +24,9 @@ AppAsset::register($this);
     <link rel="alternate" hreflang="en-UA" href="https://shark-taxi.pl/en">
     <link rel="alternate" hreflang="uk-UA" href="https://shark-taxi.pl/ru">
 
-    <meta property="og:title" content="Shark Taxi - служба такси">
-    <meta property="og:description" content="Служба такси">
-    <meta property="og:image" content="/image/mobile-logotype.jpg">
+    <meta property="og:title" content="Shark Taxi ">
+    <meta property="og:description" content="Taxi service">
+    <meta property="og:image" content="/image/mobile-logotype.png">
     <meta name="apple-itunes-app" content="app-id=779587448">
 
     <link rel="canonical" href="https://shark-taxi.pl/">

@@ -171,6 +171,10 @@ h3, .zagolovok3 {
     text-decoration: underline
 }
 
+.more-reviews-link {
+    margin-top: 10px;
+}
+
 p.copy {
     text-align: center
 }
@@ -200,6 +204,7 @@ header {
 .logo {
     background-image: url("../image/logo.png");
     background-size: 161px 100px;
+    background-repeat: no-repeat;
     width: 161px;
     height: 100px;
     cursor: pointer;
@@ -401,6 +406,7 @@ header {
 
 .downlad-apps-block a {
     display: block;
+    width: 200px;
     margin-bottom: 15px;
     overflow: hidden
 }
@@ -430,6 +436,23 @@ header {
     margin-right: 0;
 }
 
+@media (max-width: 959px) {
+
+    .our-features-block .small-block {
+        padding-left: 0;
+        padding-right: 0;
+        margin-right: 0;
+        border-right: none;
+        border-top: 1px solid #D7D7D7;
+    }
+
+    .more-reviews-link {
+        margin-top: 21px;
+        margin-bottom: 21px;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
     .downlad-apps-block-main .for-clients {
         margin-top: 15px;
@@ -444,16 +467,49 @@ header {
     }
 }
 
+@media (max-width: 767px) {
+
+    .downlad-apps-block.downlad-apps-block-main.soc-f {
+        margin-top: 24px;
+    }
+
+    .downlad-apps-block.downlad-apps-block-main.soc-f .for-clients a {
+        margin: 1px 10px 10px;
+    }
+
+    .more-reviews-link {
+        margin-top: 0;
+        margin-bottom: 21px;
+    }
+
+}
+
 .page-header {
     margin-top: 20px;
     margin-bottom: 40px
 }
 
-.page-header h1, .not-found-header {
+.page-header h1, .page-header .small-title, .not-found-header {
     margin-top: 0;
     color: #000;
     text-transform: inherit;
     margin-bottom: 0
+}
+
+.page-header .small-title {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Play", sans-serif;
+    margin: 0;
+}
+
+.page-header .small-title small {
+    font-size: 55%;
+    font-weight: 400;
+    line-height: 1;
+    color: #999;
+    font-family: "Play", sans-serif;
 }
 
 .downlad-apps-block-pic {
@@ -1343,7 +1399,13 @@ ul.property-list > li {
     background-color: #fff
 }
 
-.help-tabs li button:hover, .help-tabs li button:focus {
+.help-tabs li button:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+
+.help-tabs li button:hover, .help-tabs li button.active {
     text-decoration: none;
     outline: none;
     background-color: #DB9A2D;
@@ -1557,6 +1619,8 @@ td.icon-footer {
     background-color: #008A03
 }
 
+
+
 form {
     overflow: hidden
 }
@@ -1715,6 +1779,7 @@ form {
     width: 100%;
     padding: 5px 3px;
     box-sizing: border-box;
+    text-align: left;
     margin-bottom: 0;
     clear: both
 }
@@ -1725,6 +1790,7 @@ form {
 
 .newblockform .mail {
     text-align: right;
+    margin-top: 8px;
     margin-bottom: 0
 }
 
@@ -2105,14 +2171,6 @@ form {
     background: #f5f5f5
 }
 
-#map {
-    background: url("../image/ukr_map.png") center/100% 100% no-repeat;
-    width: 901px;
-    height: 615px;
-    margin: auto;
-    position: relative;
-}
-
 #map li {
     list-style: none;
     position: absolute;
@@ -2141,12 +2199,18 @@ form {
 }
 
 #map li a {
+    display: block;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 10px;
-    text-decoration: underline;
+    text-decoration: none;
     color: #b01116;
-    text-shadow: 2px 2px 6px rgba(57, 37, 7, .75);
+    transition: 0.2s;
+}
+
+
+#map li a:hover span {
+    color: #b01116;
 }
 
 #map li.big1 a {
@@ -2759,6 +2823,15 @@ form {
 }
 
 @media (max-width: 500px) {
+
+    .logo {
+        background-size: 150px 90px;
+        width: 150px;
+        height: 90px;
+        margin: 8px 0 0 0;
+    }
+
+
     .newblockform .first, .newblockform .second {
         width: 100%;
         float: none
@@ -2781,7 +2854,8 @@ form {
     }
 
     .newblockform .mail {
-        text-align: center
+        text-align: center;
+        margin-top: 12px;
     }
 
     #thank .wrap {
@@ -2828,32 +2902,6 @@ form {
     .boxes_str li {
         width: 31%;
     }
-
-    .container.map_b {
-        background: url("../image/Mobile.jpg");
-    }
-
-    .map_b .size-full {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-
-    #map {
-        background: none;
-        width: auto;
-        height: auto;
-    }
-
-    #map li {
-        position: relative;
-        top: 0 !important;
-        left: 0 !important;
-    }
-
-    #map li:after {
-        display: none;
-    }
 }
 
 @media (min-width: 960px) {
@@ -2870,8 +2918,15 @@ form {
 }
 
 @media (max-width: 959px) {
+
+
     .contacts-line {
         border: 0
+    }
+
+    .downlad-apps-block-main a {
+        margin-right: 0;
+        width: 210px;
     }
 
     .downlad-apps-block {
@@ -2889,15 +2944,6 @@ form {
         right: 254px
     }
 
-    header .lang {
-        position: absolute;
-        top: 50%;
-        left: -263px;
-        width: 80px;
-        display: block;
-        float: none;
-        margin-right: 0
-    }
 
     .new-sity .downlad-apps-block > div:first-child {
         width: 100%;
@@ -2913,17 +2959,10 @@ form {
         margin-bottom: 0
     }
 
-    #radio {
-        position: absolute;
-        left: -18px;
-        top: 50%
+    .poland-map {
+        width: auto !important;
     }
 
-    #video {
-        position: absolute;
-        left: -18px;
-        top: 2%;
-    }
 }
 
 @media (max-width: 768px) {
@@ -2981,12 +3020,6 @@ form {
 
     .soc-f {
         text-align: center
-    }
-
-    .social-red, .phone-adress {
-        margin: 0 auto;
-        float: none;
-        display: inline-block
     }
 
     .phone-adress {
@@ -3086,7 +3119,6 @@ form {
     }
 
     .additional-business {
-        padding-top: 34px !important;
         width: 66.666666666667%;
     }
 
@@ -3118,6 +3150,22 @@ form {
 }
 
 @media (max-width: 767px) {
+
+    .additional-business {
+        position: relative;
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+
+    #mobile-menu-button {
+        position: absolute;
+        right: 9px;
+        margin-top: 48px;
+    }
+
     .short-news-title {
         height: 24px
     }
@@ -3141,9 +3189,6 @@ form {
 }
 
 @media (max-width: 750px) {
-    header .lang {
-        display: none
-    }
 
     iframe {
         height: 350px !important;
@@ -3216,6 +3261,11 @@ form {
 }
 
 @media (max-width: 480px) {
+
+    .social-red {
+        display: none;
+    }
+
     .reviews-main-title, .features-title {
         font-size: 20px
     }
@@ -3234,7 +3284,11 @@ form {
         font-size: 22px
     }
 
-    h1, .zagolovok {
+    .page-header .small-title {
+        margin-bottom: 30px;
+    }
+
+    h1, .zagolovok, .page-header .small-title {
         font-size: 22px
     }
 
@@ -3246,55 +3300,20 @@ form {
         font-size: 18px
     }
 
-    .logo {
-        width: 100px;
-        height: 80px;
-        margin: 0 auto;
-    }
-
-    .main-header-block {
-        width: 100%;
-        box-sizing: border-box;
-        text-align: center;
-        margin: 0 auto;
-        float: none;
-    }
-
     .additional-business {
-        width: 100%;
-        box-sizing: border-box;
         padding-top: 0 !important;
     }
 
-    .countries.pull-right {
-        float: none !important;
-    }
-
-    #video, #radio {
-        position: static;
-        top: auto;
-        left: auto;
-        right: auto;
-        bottom: auto;
-    }
-
-    #video {
-        margin-top: 15px;
-    }
-
-    #radio {
-        margin-top: 9px;
+    .lang {
+        margin-right: 0;
     }
 
     #mobile-menu-button {
-        position: absolute;
-        right: 10px;
-        top: -70px;
-        z-index: 999999999;
+        right: 17px;
     }
 
     header {
-        min-height: 196px;
+        min-height: 120px;
     }
 
     .navbar-toggle {
@@ -3320,14 +3339,6 @@ form {
 
     iframe {
         height: 200px !important;
-    }
-
-    #radio {
-        font-size: 13px;
-    }
-
-    #video {
-        font-size: 13px;
     }
 
     .taxi-types td {
@@ -3376,6 +3387,15 @@ form {
     margin-top: 18px;
     font-weight: 400;
     font-family: 'Play', sans-serif;
+}
+
+@media (max-width: 500px) {
+    .newblockform .sub {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 430px) {

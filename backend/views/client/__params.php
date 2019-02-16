@@ -1,8 +1,8 @@
 <?php
 return [
-	'id' => 'site-settings',
-	'items' => Yii::t('app', 'Настройки'),
-	'item' => Yii::t('app', 'Настройки'),
+	'id' => 'client',
+	'items' => Yii::t('app', 'Клиенты'),
+	'item' => Yii::t('app', 'Клиенты'),
 	'create' => Yii::t('app', 'Создать'),
 	'update' => Yii::t('app', 'Редактировать'),
 	'delete' => Yii::t('app', 'Удалить'),

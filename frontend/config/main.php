@@ -9,11 +9,12 @@ $params = array_merge(
 return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log'],
-    'language' => 'ru-RU',
+    'bootstrap' => ['log', 'languages'],
+    'language' => 'pl-PL',
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
         'request' => [
+	        'class' => 'common\components\Request', // custom
 	        'baseUrl' => '',
             'csrfParam' => '_csrf-frontend',
         ],
@@ -38,9 +39,18 @@ return [
             'errorAction' => 'site/error',
         ],
         'urlManager' => [
+	        'class' => 'common\components\UrlManager',  // custom
 	        'enablePrettyUrl' => true,
 	        'showScriptName' => false,
 	        'rules' => require (__DIR__ . '/routes.php'),
+        ],
+        'i18n' => [
+	        'translations' => [
+		        'app' => [
+			        'class' => 'yii\i18n\PhpMessageSource',
+			        'basePath' => '@common/messages',
+		        ],
+	        ],
         ],
         'assetManager' => [
 	        'bundles' => [
@@ -57,6 +67,18 @@ return [
         'siteSettingsComponent' => [
 	        'class' => 'frontend\components\SiteSettingsComponent'
         ],
+    ],
+    'modules' => [
+	    'languages' => [
+		    'class' => 'common\modules\languages\Module',  // custom
+		    'languages' => [
+			    'pl' => 'pl',
+			    'en' => 'en',
+			    'ru' => 'ru',
+		    ],
+		    'default_language' => 'pl',
+		    'show_default' => false,
+	    ],
     ],
     'params' => $params,
 ];
