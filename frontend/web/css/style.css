@@ -531,7 +531,7 @@ header {
     margin-right: 16px
 }
 
-.review p.comment {
+.review p.comment, .review .comment {
     font-size: 17px;
     color: #8b8a8a;
     background-color: #EFEFEF;
@@ -543,7 +543,7 @@ header {
     margin-bottom: 30px
 }
 
-.review p.comment:after {
+.review p.comment:after, .review .comment:after {
     position: absolute;
     width: 23px;
     height: 24px;
