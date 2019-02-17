@@ -207,10 +207,9 @@ header {
 
 .logo {
     display: flex;
-    width: 160px;
-    height: 92px;
+    width: 230px;
+    height: 99px;
     transition: .26s;
-
 }
 
 .logo:hover {
@@ -1551,8 +1550,11 @@ td.icon-footer {
 }
 
 .shark-img {
-    background: url("../image/icons/red-shark-logo.png") no-repeat right 12px;
-    min-height: 60px
+    background-image: url("../image/logo.svg");
+    background-size: 155px;
+    background-position: right 12px;
+    background-repeat: no-repeat;
+    min-height: 60px;
 }
 
 .black-footer {
@@ -2856,8 +2858,7 @@ form {
     }
 
     .logo {
-        width: 146px;
-        height: 82px;
+        width: 204px;
     }
 
     .newblockform .first, .newblockform .second {

@@ -10,7 +10,7 @@ use frontend\widgets\CityListWidget;
         <div class="row">
             <div class="col-md-3 col-xs-3 main-header-block">
                 <a class="logo" href="<?= Url::to(['site/index']) ?>" title="Shark Taxi Poland">
-                    <img src="/image/logo.png" alt="Shark Taxi">
+                    <img src="/image/logo.svg" alt="Shark Taxi" width="230" height="100">
                 </a>
             </div>
             <div class="col-md-9 col-xs-9 additional-business" style="padding-top: 10px;">

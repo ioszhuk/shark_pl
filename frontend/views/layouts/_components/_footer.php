@@ -43,7 +43,7 @@ use yii\helpers\Url;
                     </tr>
                 </table>
             </div>
-            <div class="col-sm-3 shark-img col-xs-12">
+            <div class="col-sm-6 shark-img col-xs-12">
                 <ul class="lang-choose visible-xs">
 					<?= LanguageWidget::widget() ?>
                 </ul>
