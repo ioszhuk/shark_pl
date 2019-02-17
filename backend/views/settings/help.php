@@ -92,6 +92,7 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' => ['settings/h
 										'settings' => [
 											'lang' => 'ru',
 											'minHeight' => 340,
+											'removeWithoutAttr' => [],
 											'buttons' => ['html', 'formatting', 'bold', 'italic', 'underline', 'deleted', 'unorderedlist', 'orderedlist', 'link', 'alignment', 'horizontalrule'],
 											'formatting' => ['p', 'blockquote', 'pre'],
 											'plugins' => [
@@ -124,6 +125,7 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' => ['settings/h
 										'settings' => [
 											'lang' => 'ru',
 											'minHeight' => 340,
+											'removeWithoutAttr' => [],
 											'buttons' => ['html', 'formatting', 'bold', 'italic', 'underline', 'deleted', 'unorderedlist', 'orderedlist', 'link', 'alignment', 'horizontalrule'],
 											'formatting' => ['p', 'blockquote', 'pre'],
 											'plugins' => [
@@ -156,6 +158,7 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' => ['settings/h
 										'settings' => [
 											'lang' => 'ru',
 											'minHeight' => 340,
+											'removeWithoutAttr' => [],
 											'buttons' => ['html', 'formatting', 'bold', 'italic', 'underline', 'deleted', 'unorderedlist', 'orderedlist', 'link', 'alignment', 'horizontalrule'],
 											'formatting' => ['p', 'blockquote', 'pre'],
 											'plugins' => [
@@ -197,6 +200,7 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' => ['settings/h
 										'settings' => [
 											'lang' => 'ru',
 											'minHeight' => 340,
+											'removeWithoutAttr' => [],
 											'buttons' => ['html', 'formatting', 'bold', 'italic', 'underline', 'deleted', 'unorderedlist', 'orderedlist', 'link', 'alignment', 'horizontalrule'],
 											'formatting' => ['p', 'blockquote', 'pre'],
 											'plugins' => [
@@ -228,6 +232,7 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' => ['settings/h
 										'settings' => [
 											'lang' => 'ru',
 											'minHeight' => 340,
+											'removeWithoutAttr' => [],
 											'buttons' => ['html', 'formatting', 'bold', 'italic', 'underline', 'deleted', 'unorderedlist', 'orderedlist', 'link', 'alignment', 'horizontalrule'],
 											'formatting' => ['p', 'blockquote', 'pre'],
 											'plugins' => [
@@ -259,6 +264,7 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' => ['settings/h
 										'settings' => [
 											'lang' => 'ru',
 											'minHeight' => 340,
+											'removeWithoutAttr' => [],
 											'buttons' => ['html', 'formatting', 'bold', 'italic', 'underline', 'deleted', 'unorderedlist', 'orderedlist', 'link', 'alignment', 'horizontalrule'],
 											'formatting' => ['p', 'blockquote', 'pre'],
 											'plugins' => [
@@ -299,6 +305,7 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' => ['settings/h
 										'settings' => [
 											'lang' => 'ru',
 											'minHeight' => 340,
+											'removeWithoutAttr' => [],
 											'buttons' => ['html', 'formatting', 'bold', 'italic', 'underline', 'deleted', 'unorderedlist', 'orderedlist', 'link', 'alignment', 'horizontalrule'],
 											'formatting' => ['p', 'blockquote', 'pre'],
 											'plugins' => [
@@ -330,6 +337,7 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' => ['settings/h
 										'settings' => [
 											'lang' => 'ru',
 											'minHeight' => 340,
+											'removeWithoutAttr' => [],
 											'buttons' => ['html', 'formatting', 'bold', 'italic', 'underline', 'deleted', 'unorderedlist', 'orderedlist', 'link', 'alignment', 'horizontalrule'],
 											'formatting' => ['p', 'blockquote', 'pre'],
 											'plugins' => [
@@ -361,6 +369,7 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' => ['settings/h
 										'settings' => [
 											'lang' => 'ru',
 											'minHeight' => 340,
+											'removeWithoutAttr' => [],
 											'buttons' => ['html', 'formatting', 'bold', 'italic', 'underline', 'deleted', 'unorderedlist', 'orderedlist', 'link', 'alignment', 'horizontalrule'],
 											'formatting' => ['p', 'blockquote', 'pre'],
 											'plugins' => [

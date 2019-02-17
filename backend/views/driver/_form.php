@@ -46,10 +46,14 @@ use backend\widgets\MetronicBoostrapSelect;
 				<?= Html::img($model->getUploadUrl('image_pl'), ['class' => 'img-thumbnail']); ?>
 			<?php endif ?>
 			<?= $form->field($model, 'image_pl')->fileInput() ?>
+        </div>
+        <div class="col like-box">
 			<?php if(!empty($model->image_en)) : ?>
 				<?= Html::img($model->getUploadUrl('image_en'), ['class' => 'img-thumbnail']); ?>
 			<?php endif ?>
 			<?= $form->field($model, 'image_en')->fileInput() ?>
+        </div>
+        <div class="col like-box">
 			<?php if(!empty($model->image_ru)) : ?>
 				<?= Html::img($model->getUploadUrl('image_ru'), ['class' => 'img-thumbnail']); ?>
 			<?php endif ?>
@@ -57,13 +61,13 @@ use backend\widgets\MetronicBoostrapSelect;
         </div>
     </div>
 
-
     <div class="row justify-content-between">
         <div class="col like-box">
 			<?= $form->field($model, 'body_pl')->widget(Widget::className(), [
 				'settings' => [
 					'lang' => 'ru',
-					'minHeight' => 600,
+					'minHeight' => 400,
+					'removeWithoutAttr' => [],
 					'buttons' => ['html', 'formatting', 'bold', 'italic', 'underline', 'deleted', 'unorderedlist', 'orderedlist', 'link', 'alignment', 'horizontalrule'],
 					'formatting' => ['p', 'blockquote', 'pre', 'h2', 'h3', 'h4', 'h5', 'h6'],
 					'plugins' => [
@@ -76,7 +80,8 @@ use backend\widgets\MetronicBoostrapSelect;
 			<?= $form->field($model, 'body_en')->widget(Widget::className(), [
 				'settings' => [
 					'lang' => 'ru',
-					'minHeight' => 600,
+					'minHeight' => 400,
+					'removeWithoutAttr' => [],
 					'buttons' => ['html', 'formatting', 'bold', 'italic', 'underline', 'deleted', 'unorderedlist', 'orderedlist', 'link', 'alignment', 'horizontalrule'],
 					'formatting' => ['p', 'blockquote', 'pre', 'h2', 'h3', 'h4', 'h5', 'h6'],
 					'plugins' => [
@@ -89,7 +94,8 @@ use backend\widgets\MetronicBoostrapSelect;
 			<?= $form->field($model, 'body_ru')->widget(Widget::className(), [
 				'settings' => [
 					'lang' => 'ru',
-					'minHeight' => 600,
+					'minHeight' => 400,
+					'removeWithoutAttr' => [],
 					'buttons' => ['html', 'formatting', 'bold', 'italic', 'underline', 'deleted', 'unorderedlist', 'orderedlist', 'link', 'alignment', 'horizontalrule'],
 					'formatting' => ['p', 'blockquote', 'pre', 'h2', 'h3', 'h4', 'h5', 'h6'],
 					'plugins' => [

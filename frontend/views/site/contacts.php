@@ -1,6 +1,16 @@
 <?php
 
-$this->title = Yii::t('app', 'contacts__title');
+/**
+ * @var $this \yii\web\View
+ * @var array $model
+ */
+
+$this->title = $model["seo_title"];
+
+$this->registerMetaTag([
+	'name' => 'description',
+	'content' => $model["seo_description"]
+])
 
 ?>
 <section class="contacts-content">
@@ -32,6 +42,8 @@ $this->title = Yii::t('app', 'contacts__title');
         </div>
 
 	    <?= $this->render('@frontend/views/components/_advice') ?>
+
+        <br>
 
     </div>
 </section>

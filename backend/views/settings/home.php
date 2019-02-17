@@ -63,8 +63,9 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' => ['settings/h
 						'settings' => [
 							'lang' => 'ru',
 							'minHeight' => 600,
+							'removeWithoutAttr' => [],
 							'buttons' => ['html', 'formatting', 'bold', 'italic', 'underline', 'deleted', 'unorderedlist', 'orderedlist', 'link', 'alignment', 'horizontalrule'],
-							'formatting' => ['p', 'blockquote', 'pre', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
+							'formatting' => ['p', 'pre', 'h2', 'h3', 'h4', 'h5', 'h6'],
 							'plugins' => [
 								'fullscreen',
 							],
@@ -84,6 +85,7 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' => ['settings/h
 						'settings' => [
 							'lang' => 'ru',
 							'minHeight' => 600,
+							'removeWithoutAttr' => [],
 							'buttons' => ['html', 'formatting', 'bold', 'italic', 'underline', 'deleted', 'unorderedlist', 'orderedlist', 'link', 'alignment', 'horizontalrule'],
 							'formatting' => ['p', 'blockquote', 'pre', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
 							'plugins' => [
@@ -105,6 +107,7 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' => ['settings/h
 						'settings' => [
 							'lang' => 'ru',
 							'minHeight' => 600,
+							'removeWithoutAttr' => [],
 							'buttons' => ['html', 'formatting', 'bold', 'italic', 'underline', 'deleted', 'unorderedlist', 'orderedlist', 'link', 'alignment', 'horizontalrule'],
 							'formatting' => ['p', 'blockquote', 'pre', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
 							'plugins' => [

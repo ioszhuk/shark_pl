@@ -73,6 +73,8 @@ class ClientController extends Controller
     {
         $model = $this->findModel($id);
 
+	    $model->setScenario('update');
+
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['update', 'id' => $model->id]);
         }

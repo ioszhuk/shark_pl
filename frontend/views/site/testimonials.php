@@ -2,43 +2,57 @@
 
 /**
  * @var $this \yii\web\View
+ * @var array $seoModel
+ * @var string $language
+ * @var $model \common\models\Testimonial
  */
 
-$this->title = Yii::t('app', 'testimonials__title');
+use yii\helpers\Html;
+
+$this->title = $seoModel["seo_title"];
+
+$this->registerMetaTag([
+	'name' => 'description',
+	'content' => $seoModel["seo_description"]
+])
 
 ?>
-
 <section class="testimonials-content">
-	<div class="container">
+    <div class="container">
 
-		<?= $this->render('@frontend/views/components/_download-our-apps') ?>
+		<?= $this->render('@frontend/views/components/_download-our-apps', ['showOnly' => 'clients']) ?>
 
-		<div class="row">
-			<div class="col-xs-12">
+        <div class="row">
+            <div class="col-xs-12">
 
-				<h1 class="zagolovok2"  style="text-align: center;">Отзывы клиентов</h1>
+                <h1 class="zagolovok2"  style="text-align: center;"><?= Yii::t('app', 'testimonials__h1') ?></h1>
 
-				<br><br>
+                <br><br>
 
-				<div class="cont-mommentaries">
+                <div class="cont-mommentaries">
 
-                    <div class="cont-comm">
-                        <div class="name">
-                            <div class="img"><img width="76" height="76" src="https://shark-taxi.ua/wp-content/uploads/1.png" class="attachment-rew-md size-rew-md wp-post-image" alt=""></div>
-                            <div class="name-persone">Ирина<br>Хотман</div>
+					<?php foreach($model as $item) : ?>
+                        <div class="cont-comm">
+                            <div class="name">
+                                <div class="img person-avatar">
+									<?= Html::img($item->getThumbUploadUrl('avatar', 'thumb'), [
+										'width' => '76',
+										'height' => '76',
+										'class' => 'attachment-rew-md size-rew-md wp-post-image',
+										'alt' => $item["name_{$language}"],
+									]) ?>
+                                </div>
+                                <div class="name-persone"><?= $item["name_{$language}"] ?></div>
+                            </div>
+                            <div class="rewiew-text">
+								<?= $item["body_{$language}"] ?>
+                            </div>
+
                         </div>
-                        <div class="rewiew-text">
-                            Лучшее приложение из тех, что я видела.	</div>
-                        <div itemprop="review" itemscope="" itemtype="http://schema.org/Review" style="display: none">
-                            <span itemprop="itemReviewed">Шарк такси</span>
-                            от <span itemprop="author">Ирина Хотман</span>,
-                            <span itemprop="description">Лучшее приложение из тех, что я видела.</span>
-                        </div>
-                    </div>
+					<?php endforeach ?>
 
-
-				</div>
-			</div>
-		</div>
-	</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>

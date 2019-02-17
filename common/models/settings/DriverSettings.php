@@ -19,6 +19,14 @@ class DriverSettings extends Settings
 	public $name_en;
 	public $name_ru;
 
+	public $work_standart_name_pl;
+	public $work_standart_name_en;
+	public $work_standart_name_ru;
+
+	public $work_standart_body_pl;
+	public $work_standart_body_en;
+	public $work_standart_body_ru;
+
 	public function attributeLabels()
 	{
 		return [
@@ -30,10 +38,17 @@ class DriverSettings extends Settings
 			'seo_description_en' => 'SEO Description (Английский)',
 			'seo_description_ru' => 'SEO Description (Русский)',
 
-			'name_pl' => 'Заголовок (Польский)',
-			'name_en' => 'Заголовок (Английский)',
-			'name_ru' => 'Заголовок (Русский)',
+			'name_pl' => 'Заголовок (h1) (Польский)',
+			'name_en' => 'Заголовок (h1) (Английский)',
+			'name_ru' => 'Заголовок (h1) (Русский)',
 
+			'work_standart_name_pl' => 'Заголовок (стандарты Shark Taxi - Польский)',
+			'work_standart_name_en' => 'Заголовок (стандарты Shark Taxi - Английский)',
+			'work_standart_name_ru' => 'Заголовок (стандарты Shark Taxi - Русский)',
+
+			'work_standart_body_pl' => 'Описание (стандарты Shark Taxi - Польский)',
+			'work_standart_body_en' => 'Описание (стандарты Shark Taxi - Английский)',
+			'work_standart_body_ru' => 'Описание (стандарты Shark Taxi - Русский)',
 		];
 	}
 
@@ -42,7 +57,9 @@ class DriverSettings extends Settings
 		return [
 			[['name_pl', 'name_en', 'name_ru'], 'string'],
 			[['seo_title_pl', 'seo_title_en', 'seo_title_ru', 'seo_description_pl', 'seo_description_en',
-				'seo_description_ru'], 'string', 'max' => 255]
+				'seo_description_ru'], 'string', 'max' => 255],
+			[['work_standart_name_pl', 'work_standart_name_en', 'work_standart_name_ru'], 'string', 'max' => 255],
+			[['work_standart_body_pl', 'work_standart_body_en', 'work_standart_body_ru'], 'string'],
 		];
 	}
 
@@ -64,6 +81,14 @@ class DriverSettings extends Settings
 		$this->name_en = $settings->get('name_en', self::$SECTION);
 		$this->name_ru = $settings->get('name_ru', self::$SECTION);
 
+		$this->work_standart_name_pl = $settings->get('work_standart_name_pl', self::$SECTION);
+		$this->work_standart_name_en = $settings->get('work_standart_name_en', self::$SECTION);
+		$this->work_standart_name_ru = $settings->get('work_standart_name_ru', self::$SECTION);
+
+		$this->work_standart_body_pl = $settings->get('work_standart_body_pl', self::$SECTION);
+		$this->work_standart_body_en = $settings->get('work_standart_body_en', self::$SECTION);
+		$this->work_standart_body_ru = $settings->get('work_standart_body_ru', self::$SECTION);
+
 	}
 
 	public function save()
@@ -81,6 +106,14 @@ class DriverSettings extends Settings
 		$settings->set('name_pl', $this->name_pl, self::$SECTION, 'string');
 		$settings->set('name_en', $this->name_en, self::$SECTION, 'string');
 		$settings->set('name_ru', $this->name_ru, self::$SECTION, 'string');
+
+		$settings->set('work_standart_name_pl', $this->work_standart_name_pl, self::$SECTION, 'string');
+		$settings->set('work_standart_name_en', $this->work_standart_name_en, self::$SECTION, 'string');
+		$settings->set('work_standart_name_ru', $this->work_standart_name_ru, self::$SECTION, 'string');
+
+		$settings->set('work_standart_body_pl', $this->work_standart_body_pl, self::$SECTION, 'string');
+		$settings->set('work_standart_body_en', $this->work_standart_body_en, self::$SECTION, 'string');
+		$settings->set('work_standart_body_ru', $this->work_standart_body_ru, self::$SECTION, 'string');
 
 		return true;
 	}

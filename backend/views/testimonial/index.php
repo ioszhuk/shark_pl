@@ -3,6 +3,7 @@
 use backend\widgets\MetronicModal;
 use kartik\grid\GridView;
 use yii\helpers\Html;
+use common\models\Testimonial;
 
 /* @var $this yii\web\View */
 /* @var $searchModel backend\models\TestimonialSearch */
@@ -17,10 +18,17 @@ $columns = [
 	[
 		'attribute' => 'name_pl',
 		'format' => 'raw',
-		'label' => 'Название',
+		'label' => 'ФИО',
 		'value' => function($model) {
 			return Html::a($model->name_pl, ['update', 'id' => $model->id]);
 		}
+	],
+	[
+		'class' => '\kartik\grid\BooleanColumn',
+		'attribute' => 'status',
+		'label' => 'Статус видимости',
+		'trueLabel' => Testimonial::ENABLE,
+		'falseLabel' => Testimonial::DISABLE,
 	],
 	[
 		'class' => 'yii\grid\ActionColumn',

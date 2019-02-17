@@ -64,6 +64,7 @@ use backend\widgets\MetronicSingleCheckbox;
 				'settings' => [
 					'lang' => 'ru',
 					'minHeight' => 600,
+					'removeWithoutAttr' => [],
 					'buttons' => ['html', 'formatting', 'bold', 'italic', 'underline', 'deleted', 'unorderedlist', 'orderedlist', 'link', 'alignment', 'horizontalrule'],
 					'formatting' => ['p', 'blockquote', 'pre', 'h2', 'h3', 'h4', 'h5', 'h6'],
 					'plugins' => [
@@ -77,6 +78,7 @@ use backend\widgets\MetronicSingleCheckbox;
 				'settings' => [
 					'lang' => 'ru',
 					'minHeight' => 600,
+					'removeWithoutAttr' => [],
 					'buttons' => ['html', 'formatting', 'bold', 'italic', 'underline', 'deleted', 'unorderedlist', 'orderedlist', 'link', 'alignment', 'horizontalrule'],
 					'formatting' => ['p', 'blockquote', 'pre', 'h2', 'h3', 'h4', 'h5', 'h6'],
 					'plugins' => [
@@ -90,6 +92,7 @@ use backend\widgets\MetronicSingleCheckbox;
 				'settings' => [
 					'lang' => 'ru',
 					'minHeight' => 600,
+					'removeWithoutAttr' => [],
 					'buttons' => ['html', 'formatting', 'bold', 'italic', 'underline', 'deleted', 'unorderedlist', 'orderedlist', 'link', 'alignment', 'horizontalrule'],
 					'formatting' => ['p', 'blockquote', 'pre', 'h2', 'h3', 'h4', 'h5', 'h6'],
 					'plugins' => [

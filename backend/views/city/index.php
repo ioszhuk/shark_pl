@@ -3,6 +3,7 @@
 use backend\widgets\MetronicModal;
 use kartik\grid\GridView;
 use yii\helpers\Html;
+use common\models\City;
 
 /* @var $this yii\web\View */
 /* @var $searchModel backend\models\CitySearch */
@@ -21,6 +22,13 @@ $columns = [
 		'value' => function($model) {
 			return Html::a($model->name_pl, ['update', 'id' => $model->id]);
 		}
+	],
+	[
+		'class' => '\kartik\grid\BooleanColumn',
+		'attribute' => 'status',
+		'label' => 'Статус видимости',
+		'trueLabel' => City::ENABLE,
+		'falseLabel' => City::DISABLE,
 	],
 	[
 		'class' => 'yii\grid\ActionColumn',

@@ -1,6 +1,9 @@
 <?php
 
-/* @var $this yii\web\View */
+/**
+ * @var $this \yii\web\View
+ * @var array $model
+ */
 
 use yii\helpers\Html;
 use yii\helpers\Url;
@@ -8,10 +11,14 @@ use frontend\widgets\OurFeaturesWidget;
 use frontend\widgets\ReviewsWidget;
 use frontend\widgets\MapWidget;
 
-$this->title = Yii::t('app', 'home__title');
+$this->title = $model['seo_title'];
+
+$this->registerMetaTag([
+	'name' => 'description',
+	'content' => $model['seo_description']
+])
 
 ?>
-
 <section class="app-statistics">
     <div class="container">
         <div class="row page-header">
@@ -39,10 +46,10 @@ $this->title = Yii::t('app', 'home__title');
                 <div class="visible-md visible-lg">
                     <!-- -->
                     <div class="driver-info-culc">
-                        <p><span> 1026 </span><br> <?= Yii::t('app', 'calculator__day') ?></p>
-                        <p><span> 17.862.527 </span><br> <?= Yii::t('app', 'calculator__drives') ?></p>
-                        <p><span> 2.723.507 </span><br> <?= Yii::t('app', 'calculator__clients') ?> </p>
-                        <p><span> 96.124 </span><br> <?= Yii::t('app', 'calculator__drivers') ?> </p>
+                        <p><span> 1042 </span><br> <?= Yii::t('app', 'calculator__day') ?></p>
+                        <p><span> 18.193.046 </span><br> <?= Yii::t('app', 'calculator__drives') ?></p>
+                        <p><span> 2.740.678 </span><br> <?= Yii::t('app', 'calculator__clients') ?> </p>
+                        <p><span> 97.936 </span><br> <?= Yii::t('app', 'calculator__drivers') ?> </p>
                     </div>
                     <!-- -->
                 </div>
@@ -54,10 +61,10 @@ $this->title = Yii::t('app', 'home__title');
                 <div class="visible-sm visible-xs">
                     <!-- -->
                     <div class="driver-info-culc">
-                        <p><span> 1026 </span><br> <?= Yii::t('app', 'calculator__day') ?></p>
-                        <p><span> 17.862.527 </span><br> <?= Yii::t('app', 'calculator__drives') ?></p>
-                        <p><span> 2.723.507 </span><br> <?= Yii::t('app', 'calculator__clients') ?> </p>
-                        <p><span> 96.124 </span><br> <?= Yii::t('app', 'calculator__drivers') ?> </p>
+                        <p><span> 1042 </span><br> <?= Yii::t('app', 'calculator__day') ?></p>
+                        <p><span> 18.193.046 </span><br> <?= Yii::t('app', 'calculator__drives') ?></p>
+                        <p><span> 2.740.678 </span><br> <?= Yii::t('app', 'calculator__clients') ?> </p>
+                        <p><span> 97.936 </span><br> <?= Yii::t('app', 'calculator__drivers') ?> </p>
                     </div>
                     <!-- -->
                 </div>

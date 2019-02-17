@@ -4,14 +4,15 @@ return [
 
 	'/' => 'site/index',
 
+	'feedback' => 'feedback/index',
+
 	'cities' => 'city/index',
 	'cities/<slug>' => 'city/view',
 
 	'clients' => 'site/clients',
-	'testimonials' => 'site/testimonials',
+	'comments' => 'site/testimonials',
 
 	'drivers' => 'site/drivers',
 	'help' => 'site/help',
 	'contacts' => 'site/contacts',
-
 ];

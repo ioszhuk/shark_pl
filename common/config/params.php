@@ -4,14 +4,14 @@ return [
     'supportEmail' => 'support@example.com',
     'user.passwordResetTokenExpire' => 3600,
 
+	'adminEmailFrom' => 'robot@shark-taxi.pl',
+	'adminEmailTo' => 'ioszhuk@gmail.com',
+
+	//sg79787111111@gmail.com
 
 	'position' => [
-		[
-			'value' => 'left', 'label' => 'Слева',
-		],
-		[
-			'value' => 'right', 'label' => 'Справа',
-		],
+		['value' => 'left', 'label' => 'Слева'],
+		['value' => 'right', 'label' => 'Справа'],
 	]
 
 ];

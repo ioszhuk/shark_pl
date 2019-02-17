@@ -49,6 +49,18 @@ use yii\helpers\Html;
 							'icon' => 'flaticon-tool',
 							'url' => ['settings/driver-page'],
 						],
+						[
+							'label' => 'Комментарии стр.',
+							'template' => 'single',
+							'icon' => 'flaticon-tool',
+							'url' => ['settings/testimonials-page'],
+						],
+						[
+							'label' => 'Контакты стр.',
+							'template' => 'single',
+							'icon' => 'flaticon-tool',
+							'url' => ['settings/contacts-page'],
+						],
 					],
 				],
 

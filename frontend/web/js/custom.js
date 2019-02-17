@@ -8,6 +8,8 @@ $(document).ready(function () {
 
     showTabHandler();
 
+    formsend();
+
 });
 
 function articleVisabilityHandler() {
@@ -49,21 +51,25 @@ function closethan(){
     $("#thank").fadeOut(200);
 }
 
-function formsend(ee){
-    console.log("1 " + ee);
-    var form_data = ee.serialize(); //собераем все данные из формы
-    console.log("2 " + form_data);
-    $.ajax({
-        type: "POST", //Метод отправки
-        url: "https://shark-taxi.ua/wp-content/themes/shark-taxi-ukraine/action.php", //путь до php фаила отправителя
-        data: form_data,
-        success: function() {
-            //код в этом блоке выполняется при успешной отправке сообщения
-            dataLayer.push({'eventCategory':'click','eventAction':'form','eventLabel':'form-success','event':'shark-ua-form'});
-            $("#thank").fadeIn(200);
-            $("#formx")[0].reset();
-        }
+function formsend(){
+
+    $("#formx").submit(function(event) {
+        event.preventDefault();
+
+        $.ajax({
+            type: "post",
+            url: 'feedback',
+            data: $(this).serialize(),
+            success: function(response) {
+                $("#thank").fadeIn(200);
+                $("#formx")[0].reset();
+            }, error: function() {
+
+            }
+        });
+
     });
+
 }
 
 function showTabHandler() {

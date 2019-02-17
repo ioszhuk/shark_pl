@@ -197,24 +197,30 @@ header {
     margin-bottom: 20px
 }
 
+.main-header-block {
+    padding-top: 7px;
+}
+
 .container {
     position: relative
 }
 
 .logo {
-    background-image: url("../image/logo.png");
-    background-size: 161px 100px;
-    background-repeat: no-repeat;
-    width: 161px;
-    height: 100px;
-    cursor: pointer;
-    display: block;
-    margin: 0
+    display: flex;
+    width: 160px;
+    height: 92px;
+    transition: .26s;
+
+}
+
+.logo:hover {
+   opacity: .86;
 }
 
 .logo img {
     width: 100%;
-    line-height: 0
+    height: 100%;
+    background: transparent;
 }
 
 .lang-choose {
@@ -1158,6 +1164,14 @@ ul.soc-network-links li {
     border: 1px solid #9f9f9f
 }
 
+.gorod_mezgorod h1 {
+    padding: 0 0 0 45px;
+    min-height: 30px;
+    margin-top: 0;
+    background: url("../image/page/voditelyam/icons/shark-icon.png") no-repeat left center;
+    line-height: 1.5;
+}
+
 .gorod_mezgorod h2,
 .drivers-title {
     padding: 0 0 0 45px;
@@ -1183,8 +1197,12 @@ ul.soc-network-links li {
     border: none;
 }
 
+.city-content {
+    margin-top: 21px;
+}
+
 .grey-line {
-    border-bottom: 1px solid #9f9f9f;
+    border-bottom: 1px solid #e2dede;
     padding-bottom: 20px
 }
 
@@ -2007,7 +2025,7 @@ form {
     width: auto;
     border: none;
     font-size: 19px;
-    padding: 17px 35px 14px 50px;
+    padding: 17px 55px 14px;
     background: #acacac;
     border-radius: 6px;
     box-shadow: 0 2px 0 #969797;
@@ -2110,6 +2128,15 @@ form {
 .cont-comm .name .img {
     display: table-cell;
     vertical-align: middle
+}
+
+.cont-comm .name .img.person-avatar img {
+    width: 76px;
+    height: 76px;
+    border: 2px solid #D8D8DA;
+    border-radius: 100%;
+    line-height: 0;
+    object-fit: cover;
 }
 
 .cont-comm .name-persone {
@@ -2824,13 +2851,14 @@ form {
 
 @media (max-width: 500px) {
 
-    .logo {
-        background-size: 150px 90px;
-        width: 150px;
-        height: 90px;
-        margin: 8px 0 0 0;
+    .main-header-block {
+        padding-top: 12px;
     }
 
+    .logo {
+        width: 146px;
+        height: 82px;
+    }
 
     .newblockform .first, .newblockform .second {
         width: 100%;
@@ -2885,12 +2913,7 @@ form {
     }
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 4dppx) {
-    .logo {
-        background-image: url("../image/logo2x.png");
-        background-size: 100% 100%
-    }
-}
+@media (max-width: 480px) {}
 
 @media (min-width: 768px) {
     .navbar-collapse.collapse, .navbar-collapse.in, .navbar-collapse {

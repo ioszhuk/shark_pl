@@ -12,18 +12,26 @@
 }
 
 .poland-map ul {
-    list-style: none; }
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 .poland-map ul li {
     width: 100px;
     text-align: right;
     padding-right: 4px;
     position: absolute;
-    z-index: 10000; }
+    z-index: 10000;
+}
+
 .poland-map ul li span {
     color: #333;
     font-size: 16px;
     font-weight: 700;
-    text-align: left; }
+    text-align: left;
+}
+
 .poland-map ul li:after {
     content: '';
     position: absolute;
@@ -34,30 +42,37 @@
     background: #b01116;
     border-radius: 100%;
 }
+
 .poland-map ul li.warsaw {
     top: 250px;
     left: 492px;
 }
+
 .poland-map ul li.krakow {
     top: 480px;
     left: 392px;
 }
+
 .poland-map ul li.lodz {
     top: 328px;
     left: 380px;
 }
+
 .poland-map ul li.wroclaw {
     top: 382px;
     left: 210px;
 }
+
 .poland-map ul li.poznan {
     top: 270px;
     left: 210px;
 }
+
 .poland-map ul li.gdansk {
     top: 68px;
     left: 318px;
 }
+
 .poland-map ul li.szczecin {
     top: 168px;
     left: 78px;
@@ -68,21 +83,27 @@
     .poland-map ul li.warsaw {
         left: 404px;
     }
+
     .poland-map ul li.krakow {
         left: 301px;;
     }
+
     .poland-map ul li.lodz {
         left: 288px;
     }
+
     .poland-map ul li.wroclaw {
         left: 112px;
     }
+
     .poland-map ul li.poznan {
         left: 115px;
     }
+
     .poland-map ul li.gdansk {
         left: 230px;
     }
+
     .poland-map ul li.szczecin {
         left: -14px;
     }

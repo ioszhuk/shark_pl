@@ -13,14 +13,14 @@ use yii\helpers\Html;
     <?php foreach ($model as $item) : ?>
 	<div class="item">
 		<div class="review">
-			<div class="comment">
-					<?= $item["body_{$language}"] ?>
-            </div>
+			<p class="comment">
+                <?= str_replace(['<p>', '</p>', '<br>'], '', $item["body_{$language}"]) ?>
+            </p>
 			<table style="vertical-align: middle;">
 				<tr>
 					<td>
 						<div class="review-photo">
-							<?= Html::img($item->getThumbUploadUrl('avatar', 'thumb'));?>
+							<?= Html::img($item->getThumbUploadUrl('avatar', 'thumb')) ?>
 						</div>
 					</td>
 					<td><p class="autor"><?= $item["name_{$language}"] ?></p></td>

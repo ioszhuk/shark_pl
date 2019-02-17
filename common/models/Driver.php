@@ -74,7 +74,7 @@ class Driver extends \yii\db\ActiveRecord
 						'thumbs' => [
 							'thumb' => [
 								'width' => 290,
-								'height' => 483,
+								'height' => 516,
 								'quality' => 90,
 								'mode' => ManipulatorInterface::THUMBNAIL_OUTBOUND
 							],
@@ -92,7 +92,7 @@ class Driver extends \yii\db\ActiveRecord
 						'thumbs' => [
 							'thumb' => [
 								'width' => 290,
-								'height' => 483,
+								'height' => 516,
 								'quality' => 90,
 								'mode' => ManipulatorInterface::THUMBNAIL_OUTBOUND
 							],
@@ -110,7 +110,7 @@ class Driver extends \yii\db\ActiveRecord
 						'thumbs' => [
 							'thumb' => [
 								'width' => 290,
-								'height' => 483,
+								'height' => 516,
 								'quality' => 90,
 								'mode' => ManipulatorInterface::THUMBNAIL_OUTBOUND
 							],

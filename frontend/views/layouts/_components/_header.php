@@ -8,10 +8,12 @@ use frontend\widgets\CityListWidget;
 <header>
     <div class="container">
         <div class="row">
-            <div class="col-md-2 col-xs-3 main-header-block">
-                <a class="logo" href="/" title="Shark Taxi Poland"></a>
+            <div class="col-md-3 col-xs-3 main-header-block">
+                <a class="logo" href="<?= Url::to(['site/index']) ?>" title="Shark Taxi Poland">
+                    <img src="/image/logo.png" alt="Shark Taxi">
+                </a>
             </div>
-            <div class="col-md-10 col-xs-9 additional-business" style="padding-top: 10px;">
+            <div class="col-md-9 col-xs-9 additional-business" style="padding-top: 10px;">
                 <div class="social-red">
                     <a href="https://www.facebook.com/sharktaxii" rel="nofollow" target="_blank"><span class="pe-so-facebook"></span></a>
                     <a href="https://www.instagram.com/shark.taxi" rel="nofollow" target="_blank"><span class="pe-so-instagram"></span></a>
@@ -48,7 +50,6 @@ use frontend\widgets\CityListWidget;
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-
             </div>
         </div>
     </div>

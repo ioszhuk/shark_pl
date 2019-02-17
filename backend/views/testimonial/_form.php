@@ -42,6 +42,7 @@ use vova07\imperavi\Widget;
 			'settings' => [
 				'lang' => 'ru',
 				'minHeight' => 200,
+				'removeWithoutAttr' => [],
 				'buttons' => ['html', 'formatting', 'bold', 'italic', 'underline', 'deleted', 'unorderedlist', 'orderedlist', 'link', 'alignment', 'horizontalrule'],
 				'formatting' => ['p'],
 				'plugins' => [
@@ -53,6 +54,7 @@ use vova07\imperavi\Widget;
 			'settings' => [
 				'lang' => 'ru',
 				'minHeight' => 200,
+				'removeWithoutAttr' => [],
 				'buttons' => ['html', 'formatting', 'bold', 'italic', 'underline', 'deleted', 'unorderedlist', 'orderedlist', 'link', 'alignment', 'horizontalrule'],
 				'formatting' => ['p'],
 				'plugins' => [
@@ -65,6 +67,7 @@ use vova07\imperavi\Widget;
 			'settings' => [
 				'lang' => 'ru',
 				'minHeight' => 200,
+				'removeWithoutAttr' => [],
 				'buttons' => ['html', 'formatting', 'bold', 'italic', 'underline', 'deleted', 'unorderedlist', 'orderedlist', 'link', 'alignment', 'horizontalrule'],
 				'formatting' => ['p'],
 				'plugins' => [

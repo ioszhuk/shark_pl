@@ -19,10 +19,6 @@ class HelpSettings extends Settings
 	public $name_en;
 	public $name_ru;
 
-	public $caption_pl;
-	public $caption_en;
-	public $caption_ru;
-
 	public $common_question_pl;
 	public $common_question_en;
 	public $common_question_ru;
@@ -46,13 +42,9 @@ class HelpSettings extends Settings
 			'seo_description_en' => 'SEO Description (Английский)',
 			'seo_description_ru' => 'SEO Description (Русский)',
 
-			'name_pl' => 'Заголовок (Польский)',
-			'name_en' => 'Заголовок (Английский)',
-			'name_ru' => 'Заголовок (Русский)',
-
-			'caption_pl' => 'Краткое описание (Польский)',
-			'caption_en' => 'Краткое описание (Английский)',
-			'caption_ru' => 'Краткое описание (Русский)',
+			'name_pl' => 'Заголовок (h1) (Польский)',
+			'name_en' => 'Заголовок (h1) (Английский)',
+			'name_ru' => 'Заголовок (h1) (Русский)',
 
 			'common_question_pl' => 'Общие вопросы (Польский)',
 			'common_question_en' => 'Общие вопросы (Английский)',
@@ -74,7 +66,7 @@ class HelpSettings extends Settings
 
 			[['seo_title_pl', 'seo_title_en', 'seo_title_ru', 'seo_description_pl', 'seo_description_en',
 				'seo_description_ru'], 'string', 'max' => 255],
-			[['name_pl', 'name_en', 'name_ru', 'caption_pl', 'caption_en', 'caption_ru'], 'string', 'max' => 255],
+			[['name_pl', 'name_en', 'name_ru'], 'string', 'max' => 255],
 			[['common_question_pl', 'common_question_en', 'common_question_ru',
 				'help_for_driver_pl', 'help_for_driver_en', 'help_for_driver_ru',
 				'help_for_client_pl', 'help_for_client_en', 'help_for_client_ru'], 'safe']
@@ -99,10 +91,6 @@ class HelpSettings extends Settings
 		$this->name_pl = $settings->get('name_pl', self::$SECTION);
 		$this->name_en = $settings->get('name_en', self::$SECTION);
 		$this->name_ru = $settings->get('name_ru', self::$SECTION);
-
-		$this->caption_pl = $settings->get('caption_pl', self::$SECTION);
-		$this->caption_en = $settings->get('caption_en', self::$SECTION);
-		$this->caption_ru = $settings->get('caption_ru', self::$SECTION);
 
 		$this->common_question_pl = $this->unserializeAttribute('common_question_pl', self::$SECTION);
 		$this->common_question_en = $this->unserializeAttribute('common_question_en', self::$SECTION);
@@ -133,10 +121,6 @@ class HelpSettings extends Settings
 		$settings->set('name_pl', $this->name_pl, self::$SECTION, 'string');
 		$settings->set('name_en', $this->name_en, self::$SECTION, 'string');
 		$settings->set('name_ru', $this->name_ru, self::$SECTION, 'string');
-
-		$settings->set('caption_pl', $this->caption_pl, self::$SECTION, 'string');
-		$settings->set('caption_en', $this->caption_en, self::$SECTION, 'string');
-		$settings->set('caption_ru', $this->caption_ru, self::$SECTION, 'string');
 
 		$this->serializeAttribute('common_question_pl', self::$SECTION);
 		$this->serializeAttribute('common_question_en', self::$SECTION);

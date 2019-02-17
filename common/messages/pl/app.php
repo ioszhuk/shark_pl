@@ -6,22 +6,11 @@ return [
 
 	'support_desk' => 'Usługa wsparcia',
 
-	'home__title' => 'Shark Taxi w Polsce',
-
 	'cities__title' => 'Shark Taxi - Miasta',
 
-	'clients__title' => 'Shark Taxi - Klienci',
-
-	'testimonials__title' => 'Shark Taxi - Komentarze',
-
-	'drivers__title' => 'Shark Taxi - Dla kierowcy',
-
-	'help__title' => 'Shark Taxi - Pomoc',
-
-	'contacts__title' => 'Shark Taxi - Kontakt',
+	'testimonials__h1' => 'Opinie klientów',
 
 	'contacts__h1' => 'Kontakt',
-
 
 	'home__slogan' => 'Darmowa aplikacja mobilna {link}. Szybciej i łatwiej niż dzwoniąc do operatora lub zamawiając taksówkę online.',
 
@@ -40,7 +29,6 @@ return [
 	'help' => 'Pomoc',
 	'contacts' => 'Kontakt',
 
-
 	'download__app' => 'Pobierz aplikację taksówkową Shark',
 
 	'download__how_to_use' => 'Możesz zamówić taksówkę za pomocą naszych aplikacji mobilnych!',
@@ -50,10 +38,10 @@ return [
 	'download_app__title' => 'Aplikacja zamówienia taksówki',
 	'download_app__caption' => 'Mobilna taksówka aplikacji Shark pozwala zamówić samochód o każdej porze dnia, wystarczy kilka dotknięć.',
 
-	'calculator__day' => 'dni',
-	'calculator__drives' => 'wycieczki',
-	'calculator__clients' => 'użytkowników',
-	'calculator__drivers' => 'sterowniki',
+	'calculator__day' => 'dni robocze',
+	'calculator__drives' => 'udane podróże',
+	'calculator__clients' => 'klienci',
+	'calculator__drivers' => 'drivers',
 
 
 	'our_features_1_title' => 'Wygodny i <span>szybki</span>',
@@ -69,10 +57,8 @@ return [
 	'testimonials__from_client' => 'Opinie klientów',
 	'testimonials__more' => 'Zobacz więcej opinii',
 
-
 	'seo__company' => 'Promocja strony internetowej',
 	'copyright' => 'Prawo autorskie',
-
 
 	'advice__title' => 'Sugestie dotyczące <span>rozwoju</span> usługi',
 	'advice__caption' => 'Proszę opisać bardziej szczegółowo, co chciałbyś poprawić w pracy taksówki Shark. <br>Postaramy się uwzględnić twoją opinię w dalszym rozwoju usługi.',
@@ -84,7 +70,6 @@ return [
 
 	'form_send' => 'Wyślij',
 
-
 	'cities_title' => 'Miasta',
 
 	'email__support_title' => 'Usługa wsparcia',
@@ -93,6 +78,16 @@ return [
 
 	'contacts__social_networks' => 'Sieci społecznościowe',
 
-	'back_link' => '&lt; Powrót do listy miast'
+	'back_link' => '&lt; Powrót do listy miast',
+
+	'help__caption' => 'Odpowiedzi na najczęściej zadawane pytania',
+
+	'help_tab_1' => 'Typowe pytania',
+	'help_tab_2' => 'Pomoc kierowcy',
+	'help_tab_3' => 'Obsługa klienta',
+
+	'thank_you__mw__title' => '<span>Dziękujemy </span> za Twoją opinię!',
+	'thank_you__mw__caption' => 'Cenimy opinie wszystkich naszych klientów i staramy się ożywić wszystkie życzenia.',
+	'thank_you__mw__close' => 'Blisko',
 
 ];

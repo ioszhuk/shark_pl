@@ -9,6 +9,8 @@ use yii\web\AssetBundle;
  */
 class AppAsset extends AssetBundle
 {
+	public static $antiCacheCode;
+
 	public $basePath = '@webroot';
 
 	public $baseUrl = '@web';
@@ -29,4 +31,25 @@ class AppAsset extends AssetBundle
 	public $depends = [
 		'yii\web\YiiAsset',
 	];
+
+	public function init()
+	{
+		parent::init();
+
+		self::$antiCacheCode = rand(100, 99999999999999);
+
+		if ( self::$antiCacheCode ) {
+
+			foreach ($this->css as &$item) {
+				$item .= '?' . self::$antiCacheCode;
+			}
+
+			foreach ($this->js as &$item) {
+				$item .= '?' . self::$antiCacheCode;
+			}
+
+		}
+
+	}
+
 }

@@ -156,7 +156,6 @@ class Feedback extends \yii\db\ActiveRecord
 	public function getEmailBody() {
 
 		return "Имя: $this->name\n".
-		       "Телефон: $this->phone\n".
 		       "Email: $this->email\n".
 		       "Сообщение:\n$this->message\n".
 		       "Источник: ". $this->getSource();
@@ -166,8 +165,8 @@ class Feedback extends \yii\db\ActiveRecord
 	{
 		return Yii::$app->mailer->compose()
 		                        ->setTo($this->adminEmailTo)
-		                        ->setFrom([$this->adminEmailFrom => $this->adminNameFrom])
-		                        ->setSubject($this->subject)
+		                        ->setFrom($this->adminEmailFrom)
+		                        ->setSubject('Письмо с сайта Shark Taxi (Poland)')
 		                        ->setTextBody($this->getEmailBody())
 		                        ->send();
 	}
