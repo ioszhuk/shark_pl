@@ -51,10 +51,9 @@ function closethan(){
     $("#thank").fadeOut(200);
 }
 
-function formsend(){
+function formsend() {
 
-    $("#formx").submit(function(event) {
-        event.preventDefault();
+    $("#formx").on('beforeSubmit', function () {
 
         $.ajax({
             type: "post",
@@ -64,10 +63,11 @@ function formsend(){
                 $("#thank").fadeIn(200);
                 $("#formx")[0].reset();
             }, error: function() {
-
+               window.location.reload();
             }
         });
 
+        return false;
     });
 
 }

@@ -29,8 +29,12 @@ class FeedbackController extends Controller
 					throw new NotFoundHttpException();
 				}
 
+			} else {
+				throw new NotFoundHttpException();
 			}
 
+		} else {
+			return $this->redirect(['site/index']);
 		}
 
 	}

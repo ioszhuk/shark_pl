@@ -24,12 +24,12 @@ class Feedback extends \noIT\feedback\models\Feedback
 
 	public function sendEmail()
 	{
-		return Yii::$app->mailer->compose()
-		                        ->setTo(Yii::$app->params['adminEmailTo'])
-		                        ->setFrom(Yii::$app->params['adminEmailFrom'])
-		                        ->setSubject('Письмо с сайта Shark Taxi (Poland)')
-		                        ->setTextBody($this->getEmailBody())
-		                        ->send();
+		return mail(
+			Yii::$app->params['adminEmailTo'],
+			'Письмо с сайта Shark Taxi (Poland)',
+			$this->getEmailBody(),
+			Yii::$app->params['adminEmailFrom']
+		);
 	}
 
 }
