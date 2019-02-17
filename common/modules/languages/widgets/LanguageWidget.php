@@ -22,12 +22,14 @@ class LanguageWidget extends Widget
 		foreach ($languages as $key => $value) {
 
 			if($languages[$current_language] === $value) {
-				$activeClass = ['class' => 'act'];
+
+				$array_lang += [$value => Html::tag('span', ucfirst($key), ['class' => 'act'])];
+
 			} else {
-				$activeClass = [];
+
+				$array_lang  += [$value => Html::a(ucfirst($key), ['languages/default/index', 'lang' => $value])];
 			}
 
-			$array_lang += [$value => Html::a(ucfirst($key), ['languages/default/index', 'lang' => $value], $activeClass)];
 		}
 
 		$this->array_languages = $array_lang;

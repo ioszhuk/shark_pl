@@ -20,7 +20,7 @@ use frontend\widgets\CityListWidget;
                     <a href="https://www.youtube.com/channel/UCvJwBcJMkc7O_vZnwDGiHtg" rel="nofollow" target="_blank"><span class="pe-so-youtube-1"></span></a>
                 </div>
                 <div class="countries pull-right ">
-					<?= LanguageWidget::widget([]) ?>
+					<?= LanguageWidget::widget() ?>
                 </div>
                 <ul class="main-menu">
                     <li><a href="<?= Url::to(['site/index']) ?>"><?= Yii::t('app', 'home') ?></a></li>
