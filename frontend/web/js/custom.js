@@ -51,6 +51,10 @@ function closethan(){
     $("#thank").fadeOut(200);
 }
 
+function closeerrorx(){
+    $("#errorx").fadeOut(200);
+}
+
 function formsend() {
 
     $("#formx").on('beforeSubmit', function () {
