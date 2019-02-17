@@ -63,7 +63,7 @@ function formsend() {
                 $("#thank").fadeIn(200);
                 $("#formx")[0].reset();
             }, error: function() {
-               window.location.reload();
+                $("#errorx").fadeIn(200);
             }
         });
 

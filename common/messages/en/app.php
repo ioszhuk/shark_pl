@@ -90,4 +90,8 @@ return [
 	'thank_you__mw__caption' => 'We highly value the opinions of all our clients and we try to bring all wishes to life.',
 	'thank_you__mw__close' => 'Close',
 
+	'error__mw__title' => '<span>Error!</span>',
+	'error__mw__caption' => 'An error occurred while submitting the form - reload the page and try to submit the form again.',
+	'error__mw__close' => 'Close',
+
 ];

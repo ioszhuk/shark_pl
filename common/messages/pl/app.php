@@ -90,4 +90,8 @@ return [
 	'thank_you__mw__caption' => 'Cenimy opinie wszystkich naszych klientów i staramy się ożywić wszystkie życzenia.',
 	'thank_you__mw__close' => 'Blisko',
 
+	'error__mw__title' => '<span>Błąd!!</span>',
+	'error__mw__caption' => 'Wystąpił błąd podczas przesyłania formularza - odśwież stronę i spróbuj ponownie przesłać formularz.',
+	'error__mw__close' => 'Blisko',
+
 ];

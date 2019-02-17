@@ -1951,7 +1951,7 @@ form {
     content: '+';
 }
 
-#thank {
+#thank, #errorx {
     display: none;
     position: fixed;
     top: 0;
@@ -1961,7 +1961,7 @@ form {
     text-align: center
 }
 
-#thank .wrap-close {
+#thank .wrap-close, #errorx .wrap-close {
     position: absolute;
     left: 0;
     top: 0;
@@ -1971,7 +1971,7 @@ form {
     opacity: .7
 }
 
-#thank .wrap {
+#thank .wrap, #errorx .wrap {
     max-width: 310px;
     padding: 0 0 35px;
     margin: 0 auto;
@@ -1987,21 +1987,21 @@ form {
     margin-top: -195px
 }
 
-#thank .logot {
+#thank .logot, #errorx .logot {
     background: url("../image/logo.png") center no-repeat;
     height: 130px;
     border-bottom: 1px solid #d7d7d7;
     margin-bottom: 30px
 }
 
-#thank .thank {
+#thank .thank, #errorx .thank {
     font-size: 24px;
     position: relative;
     padding-bottom: 25px;
     margin-bottom: 20px
 }
 
-#thank .thank:before {
+#thank .thank:before, #errorx .thank:before {
     content: " ";
     width: 120px;
     height: 8px;
@@ -2014,11 +2014,11 @@ form {
     background: url("../image/web-elements/grey-pattern.png") repeat-x center
 }
 
-#thank .thank span {
+#thank .thank span, #errorx .thank span {
     color: #b01116
 }
 
-#thank button {
+#thank button, #errorx button {
     margin-top: 25px;
     display: inline-block;
     color: #fff;
@@ -2886,23 +2886,23 @@ form {
         margin-top: 12px;
     }
 
-    #thank .wrap {
+    #thank .wrap, #errorx .wrap {
         padding: 0 0 15px;
         margin-top: -150px
     }
 
-    #thank .logot {
+    #thank .logot, #errorx .logot {
         height: 115px;
         margin-bottom: 10px
     }
 
-    #thank .thank {
+    #thank .thank, #errorx .thank {
         font-size: 21px;
         padding-bottom: 15px;
         margin-bottom: 15px
     }
 
-    #thank button {
+    #thank button, #errorx button {
         font-size: 15px;
         margin-top: 0;
         padding: 11px 30px 10px
