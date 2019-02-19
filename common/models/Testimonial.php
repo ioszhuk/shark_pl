@@ -81,7 +81,6 @@ class Testimonial extends \yii\db\ActiveRecord
 					],
 				],
 			],
-
 		];
 	}
 
