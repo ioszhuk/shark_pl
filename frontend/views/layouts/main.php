@@ -23,13 +23,14 @@ AppAsset::register($this);
     <link rel="alternate" hreflang="uk-UA" href="https://shark-taxi.pl/ru">
     <meta property="og:title" content="Shark Taxi ">
     <meta property="og:description" content="Taxi service">
-    <meta property="og:image" content="/image/white-shark-logo.jpg">
+    <meta property="og:image" content="https://shark-taxi.pl/image/yellow-logo-shark.png">
     <meta name="apple-itunes-app" content="app-id=779587448">
 	<?php $this->head() ?>
 </head>
 
 <body>
 <?php $this->beginBody() ?>
+<img src="/image/yellow-logo-shark.png" style="display:none;">
 
 <?= $this->render('_components/_header') ?>
 
