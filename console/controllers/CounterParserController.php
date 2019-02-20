@@ -14,9 +14,9 @@ class CounterParserController extends Controller
 		if($modelData = $model->parseCounterData()) {
 			$model->setAttributes($modelData);
 			$model->save();
-			Yii::$app->settings->clearCache();
 			echo "Updated!";
 		}
 
+		Yii::$app->settings->clearCache();
 	}
 }
