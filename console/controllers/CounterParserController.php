@@ -3,6 +3,7 @@ namespace console\controllers;
 
 use common\models\settings\CounterSettings;
 use yii\console\Controller;
+use Yii;
 
 class CounterParserController extends Controller
 {
@@ -13,6 +14,7 @@ class CounterParserController extends Controller
 		if($modelData = $model->parseCounterData()) {
 			$model->setAttributes($modelData);
 			$model->save();
+			Yii::$app->settings->clearCache();
 			echo "Updated!";
 		}
 
