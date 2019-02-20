@@ -10,6 +10,7 @@ use yii\helpers\Url;
 use frontend\widgets\OurFeaturesWidget;
 use frontend\widgets\ReviewsWidget;
 use frontend\widgets\MapWidget;
+use frontend\widgets\CounterWidget;
 
 $this->title = $model['seo_title'];
 
@@ -44,14 +45,7 @@ $this->registerMetaTag([
         <div class="row">
             <div class="col-md-3 col-sm-12">
                 <div class="visible-md visible-lg">
-                    <!-- -->
-                    <div class="driver-info-culc">
-                        <p><span> 1045 </span><br> <?= Yii::t('app', 'calculator__day') ?></p>
-                        <p><span> 18.249.657 </span><br> <?= Yii::t('app', 'calculator__drives') ?></p>
-                        <p><span> 2.743.419 </span><br> <?= Yii::t('app', 'calculator__clients') ?> </p>
-                        <p><span> 98.251 </span><br> <?= Yii::t('app', 'calculator__drivers') ?> </p>
-                    </div>
-                    <!-- -->
+                  <?= CounterWidget::widget() ?>
                 </div>
             </div>
             <div class="col-md-5 col-sm-12">
@@ -59,14 +53,7 @@ $this->registerMetaTag([
                     <img src="/image/main-page/big-phones.png" alt="<?= Yii::t('app', 'download__app') ?>" title="<?= Yii::t('app', 'download__app') ?>" class="img-responsive">
                 </div>
                 <div class="visible-sm visible-xs">
-                    <!-- -->
-                    <div class="driver-info-culc">
-                        <p><span> 1045 </span><br> <?= Yii::t('app', 'calculator__day') ?></p>
-                        <p><span> 18.249.657 </span><br> <?= Yii::t('app', 'calculator__drives') ?></p>
-                        <p><span> 2.743.419 </span><br> <?= Yii::t('app', 'calculator__clients') ?> </p>
-                        <p><span> 98.251 </span><br> <?= Yii::t('app', 'calculator__drivers') ?> </p>
-                    </div>
-                    <!-- -->
+	                <?= CounterWidget::widget() ?>
                 </div>
             </div>
             <div class="col-md-4 col-sm-12">
