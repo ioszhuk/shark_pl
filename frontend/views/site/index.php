@@ -46,10 +46,10 @@ $this->registerMetaTag([
                 <div class="visible-md visible-lg">
                     <!-- -->
                     <div class="driver-info-culc">
-                        <p><span> 1042 </span><br> <?= Yii::t('app', 'calculator__day') ?></p>
-                        <p><span> 18.193.046 </span><br> <?= Yii::t('app', 'calculator__drives') ?></p>
-                        <p><span> 2.740.678 </span><br> <?= Yii::t('app', 'calculator__clients') ?> </p>
-                        <p><span> 97.936 </span><br> <?= Yii::t('app', 'calculator__drivers') ?> </p>
+                        <p><span> 1045 </span><br> <?= Yii::t('app', 'calculator__day') ?></p>
+                        <p><span> 18.249.657 </span><br> <?= Yii::t('app', 'calculator__drives') ?></p>
+                        <p><span> 2.743.419 </span><br> <?= Yii::t('app', 'calculator__clients') ?> </p>
+                        <p><span> 98.251 </span><br> <?= Yii::t('app', 'calculator__drivers') ?> </p>
                     </div>
                     <!-- -->
                 </div>
@@ -61,10 +61,10 @@ $this->registerMetaTag([
                 <div class="visible-sm visible-xs">
                     <!-- -->
                     <div class="driver-info-culc">
-                        <p><span> 1042 </span><br> <?= Yii::t('app', 'calculator__day') ?></p>
-                        <p><span> 18.193.046 </span><br> <?= Yii::t('app', 'calculator__drives') ?></p>
-                        <p><span> 2.740.678 </span><br> <?= Yii::t('app', 'calculator__clients') ?> </p>
-                        <p><span> 97.936 </span><br> <?= Yii::t('app', 'calculator__drivers') ?> </p>
+                        <p><span> 1045 </span><br> <?= Yii::t('app', 'calculator__day') ?></p>
+                        <p><span> 18.249.657 </span><br> <?= Yii::t('app', 'calculator__drives') ?></p>
+                        <p><span> 2.743.419 </span><br> <?= Yii::t('app', 'calculator__clients') ?> </p>
+                        <p><span> 98.251 </span><br> <?= Yii::t('app', 'calculator__drivers') ?> </p>
                     </div>
                     <!-- -->
                 </div>
