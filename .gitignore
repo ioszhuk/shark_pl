@@ -11,6 +11,8 @@ nbproject
 
 cdn
 
+.htaccess
+
 # zend studio for eclipse project files
 .buildpath
 .project
