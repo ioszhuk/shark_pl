@@ -15,9 +15,9 @@ use frontend\widgets\CityListWidget;
             </div>
             <div class="col-md-9 col-xs-9 additional-business" style="padding-top: 10px;">
                 <div class="social-red">
+                    <a href="https://www.youtube.com/channel/UCvJwBcJMkc7O_vZnwDGiHtg" rel="nofollow" target="_blank"><span class="pe-so-youtube-1"></span></a>
                     <a href="https://www.facebook.com/sharktaxii" rel="nofollow" target="_blank"><span class="pe-so-facebook"></span></a>
                     <a href="https://www.instagram.com/shark.taxi" rel="nofollow" target="_blank"><span class="pe-so-instagram"></span></a>
-                    <a href="https://www.youtube.com/channel/UCvJwBcJMkc7O_vZnwDGiHtg" rel="nofollow" target="_blank"><span class="pe-so-youtube-1"></span></a>
                 </div>
                 <div class="countries pull-right ">
 					<?= LanguageWidget::widget() ?>

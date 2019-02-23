@@ -18,9 +18,9 @@ use yii\helpers\Url;
             </div>
             <div class="col-md-4 col-xs-12 soc-f">
                 <div class="social-red">
+                    <a href="https://www.youtube.com/channel/UCvJwBcJMkc7O_vZnwDGiHtg" rel="nofollow" target="_blank"><span class="pe-so-youtube-1"></span></a>
                     <a href="https://www.facebook.com/sharktaxii" rel="nofollow" target="_blank"><span class="pe-so-facebook"></span></a>
                     <a href="https://www.instagram.com/shark.taxi" rel="nofollow" target="_blank"><span class="pe-so-instagram"></span></a>
-                    <a href="https://www.youtube.com/channel/UCvJwBcJMkc7O_vZnwDGiHtg" rel="nofollow" target="_blank"><span class="pe-so-youtube-1"></span></a>
                 </div>
 				<?= LanguageWidget::widget() ?>
             </div>

@@ -1594,9 +1594,9 @@ td.icon-footer {
     color: #fff;
     font-size: 19px;
     padding: 17px 35px 14px 50px;
-    background: #62ba65;
+    background: #E6A33D;
     border-radius: 6px;
-    box-shadow: 0 2px 0 #689f38;
+    box-shadow: 0 2px 0 #c68632;
     text-align: left;
     text-transform: uppercase
 }
@@ -1612,11 +1612,11 @@ td.icon-footer {
 }
 
 .btn-orange.gp {
-    background: url("../image/icons/google-play.png") no-repeat 10px 14px #62ba65
+    background: url("../image/icons/google-play.png") no-repeat 10px 14px #E6A33D
 }
 
 .btn-orange.as {
-    background: url("../image/icons/app-store.png") no-repeat 13px 16px #62ba65
+    background: url("../image/icons/app-store.png") no-repeat 13px 16px #E6A33D
 }
 
 .btn-green {

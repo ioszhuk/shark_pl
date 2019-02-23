@@ -16,16 +16,16 @@ class AppAsset extends AssetBundle
 	public $baseUrl = '@web';
 
 	public $css = [
-		'css/common-style.css',
-		'css/style.css',
-		'css/map-style.css',
-
+		'css/common-style.css?314',
+		'css/style.css?314',
+		'css/map-style.css?314',
 	];
+
 	public $js = [
-		'js/owl-carousel.js',
-		'js/youtube-resizer.js',
-		'js/carousel-after-load.js',
-		'js/custom.js'
+		'js/owl-carousel.js?314',
+		'js/youtube-resizer.js?314',
+		'js/carousel-after-load.js?314',
+		'js/custom.js?314'
 	];
 
 	public $depends = [
@@ -36,19 +36,19 @@ class AppAsset extends AssetBundle
 	{
 		parent::init();
 
-		self::$antiCacheCode = rand(100, 99999999999999);
-
-		if ( self::$antiCacheCode ) {
-
-			foreach ($this->css as &$item) {
-				$item .= '?' . self::$antiCacheCode;
-			}
-
-			foreach ($this->js as &$item) {
-				$item .= '?' . self::$antiCacheCode;
-			}
-
-		}
+//		self::$antiCacheCode = rand(100, 99999999999999);
+//
+//		if ( self::$antiCacheCode ) {
+//
+//			foreach ($this->css as &$item) {
+//				$item .= '?' . self::$antiCacheCode;
+//			}
+//
+//			foreach ($this->js as &$item) {
+//				$item .= '?' . self::$antiCacheCode;
+//			}
+//
+//		}
 
 	}
 
