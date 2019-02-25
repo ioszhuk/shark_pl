@@ -23,7 +23,7 @@ class AppAsset extends AssetBundle
 
 	public $js = [
 		'js/owl-carousel.js?314',
-		'js/youtube-resizer.js?314',
+		'js/youtube-resizer.js?314',    
 		'js/carousel-after-load.js?314',
 		'js/custom.js?314'
 	];

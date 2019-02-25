@@ -13,23 +13,22 @@ return [
     'language' => 'pl-PL',
     'controllerNamespace' => 'frontend\controllers',
     'on beforeRequest' => function () {
+
 	    $pathInfo = Yii::$app->request->pathInfo;
 	    $query = Yii::$app->request->queryString;
 
 	    if (!empty($pathInfo)) {
 
-		    if(($isStringHasUpperCase = preg_match('/[A-Z]/', $pathInfo)) ||
-		       ($isStringHasSlash = substr($pathInfo, -1) === '/')) {
+		    $isStringHasUpperCase = preg_match('/[A-Z]/', $pathInfo);
+		    $isStringHasSlash = substr($pathInfo, -1) === '/';
 
-			    if(!empty($isStringHasUpperCase)) {
+		    if($isStringHasSlash || $isStringHasUpperCase) {
+
+			    if($isStringHasUpperCase) {
 				    $pathInfo = strtolower($pathInfo);
 			    }
 
-			    if (!empty($isStringHasSlash)) {
-				    $url = '/' . substr($pathInfo, 0, -1);
-			    } else {
-				    $url = '/' . $pathInfo;
-			    }
+			    $url = $isStringHasSlash ? '/' . substr($pathInfo, 0, -1) : '/' . $pathInfo;
 
 			    if ($query) {
 				    $url .= '?' . $query;
