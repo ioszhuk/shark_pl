@@ -19,6 +19,8 @@ cdn
 .settings
 .htaccess
 
+log.txt
+
 /common/cache
 
 # windows thumbnail cache
