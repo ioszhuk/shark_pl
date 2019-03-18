@@ -17,8 +17,6 @@ use yii\helpers\Html;
         <!-- SIDEBAR START -->
 		<?= MetronicSidebar::widget([
 			'items' => [
-
-
 				[
 					'label' => 'Контент',
 					'template' => 'submenu',
@@ -63,7 +61,6 @@ use yii\helpers\Html;
 						],
 					],
 				],
-
 
 				[
 					'label' => 'Города',

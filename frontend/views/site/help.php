@@ -52,11 +52,12 @@ $this->registerMetaTag([
                             </div>
                         </div>
                         <!-- 2 -->
-                        <div class="tab-pane" style="display: block;">
+                        <div class="tab-pane" style="display: none;">
 
                             <div class="panel-group">
 
 								<?php foreach($model['help_for_driver'] as $item) : ?>
+
                                     <div class="question">
                                         <div class="title"><?= $item['question'] ?></div>
 										<?= $item['answer'] ?>
@@ -66,7 +67,7 @@ $this->registerMetaTag([
                             </div>
                         </div>
                         <!-- 3 -->
-                        <div class="tab-pane" style="display: block;">
+                        <div class="tab-pane" style="display: none;">
 
                             <div class="panel-group">
 
